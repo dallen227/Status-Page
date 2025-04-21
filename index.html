@@ -1,19 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
+    <title>Science Experiments Fleet Status</title>
     <link rel="stylesheet" href="screen.css">
-  </head>
-  <body>
-    <h1>Home</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="about.html">About</a></li>
-      </ul>
-    </nav>
-    <script src="index.js"></script>
-  </body>
+</head>
+<body>
+    <header>
+        <h1>Science Experiments Fleet Status</h1>
+        <p>Live updates on our fleet of science experiments across the solar system.</p>
+    </header>
+
+    <div class="container">
+        <!-- Experiment Cards -->
+        <div class="experiment-card" id="experiment1">
+            <h3>Juno Orbiter</h3>
+            <p>Status: <span class="status active">Active</span></p>
+        </div>
+        <div class="experiment-card" id="experiment2">
+            <h3>Curiosity Rover</h3>
+            <p>Status: <span class="status inactive">Inactive</span></p>
+        </div>
+        <div class="experiment-card" id="experiment3">
+            <h3>Venera 7 Probe</h3>
+            <p>Status: <span class="status critical">Critical</span></p>
+        </div>
+
+        <!-- Map Section -->
+        <div class="map">
+            <h2>Experiment Locations</h2>
+            <div class="map-container">
+                <!-- Placeholders for map markers -->
+                <div class="location" style="top: 20%; left: 30%;">Juno</div>
+                <div class="location" style="top: 50%; left: 70%;">Curiosity</div>
+                <div class="location" style="top: 80%; left: 50%;">Venera 7</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="details">
+        <h2>Experiment Details</h2>
+        <div class="experiment-info" id="info1">
+            <p><strong>Experiment Name:</strong> Juno Orbiter</p>
+            <p><strong>Location:</strong> Jupiter</p>
+            <p><strong>Status:</strong> Active</p>
+            <p><strong>Last Data Received:</strong> April 2025</p>
+            <p><strong>Description:</strong> Studying Jupiter's atmosphere and magnetic field.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Solar System Exploration Project</p>
+    </footer>
+</body>
 </html>
